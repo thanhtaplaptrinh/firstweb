@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <title>RMIT</title>
+  </head>
+  <body>
+    <header>
+      <img src="Screenshot 2024-12-07 105328.png" alt="RMIT logo" />
+      <div class="header-content-left">
+        <nav>
+          <a href="link"
+            ><h3>RMIT Vietnam <i class="fa-solid fa-chevron-down"></i></h3
+          ></a>
+        </nav>
+      </div>
+      <nav>
+        <div class="header-content">
+          <div class="header-content-right">
+            <ul>
+              <li><a href="#">Students</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Staff</a></li>
+
+              <li><a href="#">Library</a></li>
+              <li>
+                <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="line2">
+      <div class="seconds-content">
+        <ul>
+          <li><a href="">Study at RMIT</a></li>
+          <li><a href="">Student life</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Research</a></li>
+          <li><a href="">Business & Industry</a></li>
+        </ul>
+      </div>
+    </div>
+    <img src="pic2.png" alt="anh nen" class="pic2" />
+    <pre>
+      <a href="#">Home / pg / <a id="line2">Transform your possibilities with a master’s degree at RMIT</a></a> 
+    </pre>
+    <div class="middle">
+      <h1 style="color: #070758">Explore our business master's programs</h1>
+      <ul>
+        <li><b>Duration</b>: 2 years part time</li>
+        <br />
+        <li><b>Location</b>: Saigon south</li>
+      </ul>
+    </div>
+    <div class="middle2">
+      <h1 style="color: #070758">International reputation</h1>
+      <ul>
+        <li>
+          <b><i class="fa-solid fa-greater-than"></i>Top 130</b> universities
+          globally and <b>top 10</b> in Australia
+        </li>
+        <li>
+          <b><i class="fa-solid fa-greater-than"></i>Top 11</b> for MBA in the
+          Oceania region
+        </li>
+      </ul>
+      <p>
+        *Based on QS World University Rankings 2025 & QS Global MBA Rankings
+        2024.
+      </p>
+      <div class="video-container">
+        <video id="myVideo" width="600" poster="img/pic3.jpg">
+          <source src="vid.mp4" type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+        <button class="play-button" id="playButton">&#9654;</button>
+        <!-- Nút Play -->
+      </div>
+      <script>
+        var video = document.getElementById("myVideo");
+        var playButton = document.getElementById("playButton");
+
+        // Khi nhấn nút play, phát video và ẩn nút play
+        playButton.onclick = function () {
+          if (video.paused) {
+            video.play();
+            playButton.style.display = "none"; // Ẩn nút play khi video bắt đầu
+          } else {
+            video.pause();
+            playButton.style.display = "block"; // Hiển thị lại nút play khi video bị dừng
+          }
+        };
+
+        // Hiển thị lại nút play khi video kết thúc
+        video.onended = function () {
+          playButton.style.display = "block";
+        };
+      </script>
+      <!-- pic 4 -->
+      <div class="pic4">
+        <img src="pic4.png" alt="MBA Program" width="350px" />
+        <div class="pic4-content">
+          <h2>
+            Master of Business<br />
+            Administration (MBA)
+          </h2>
+          <p>
+            A broad program that builds skills on<br />
+            general management and covers various<br />
+            business areas like finance, marketing and<br />
+            strategy. This program is suitable for<br />
+            professionals who are seeking leadership<br />
+            and management roles in various<br />
+            industries.
+          </p>
+        </div>
+      </div>
+      <!-- pic 5 -->
+      <div class="pic5">
+        <img src="pic5.png" alt="pic4" width="350px" />
+        <div class="pic5-content">
+          <h2>Master of International Business (MIB)</h2>
+          <p>
+            A program that focuses on global markets,<br />
+            and cross-cultural management with a <br />strong emphasis on
+            international trade,<br />
+            foreign investment and global strategy. This<br />
+            program is suitable for individuals interested in international
+            business, global<br />
+            careers, and multinational companies.
+          </p>
+        </div>
+      </div>
+      <!-- icon -->
+      <div class="icon">
+        <h1>Start your own transformation today</h1>
+        <img src="pic6.png" alt="" />
+      </div>
+      <!-- icon2 -->
+      <div class="pic7">
+        <h1 style="color: #070758">
+          Our guest lecturers from industry partners
+        </h1>
+        <img src="pic7.png" alt="" />
+      </div>
+      <!-- icon3 -->
+      <div class="pic9">
+        <h1 style="color: #070758">Meet our alumni</h1>
+        <img src="pic9.png" alt="" />
+      </div>
+      <!-- button -->
+      <div class="button">
+        <button><a href="#">Register your interest</a></button>
+      </div>
+      <footer>
+        <img src="pic10.png" />
+      </footer>
+    </div>
+  </body>
+</html>
